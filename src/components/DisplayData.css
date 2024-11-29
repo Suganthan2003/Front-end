@@ -1,0 +1,109 @@
+/* General Styles */
+.mains {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Table Styles */
+.table-wrapper {
+  overflow-x: auto; /* Allows horizontal scrolling if necessary */
+  -webkit-overflow-scrolling: touch;
+}
+
+.data-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.data-table th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.data-table td {
+  color: #555;
+  font-size: 14px;
+}
+
+/* Alternating row colors */
+.data-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.data-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  /* General table padding and font size adjustment */
+  .data-table {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 8px 10px;
+  }
+
+  /* Make table cells stack and label data in mobile view */
+  .data-table th, .data-table td {
+    display: block;
+    width: 100%; /* Full width on mobile */
+    text-align: right; /* Align text to the right */
+  }
+
+  .data-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .data-table td {
+    text-align: left;
+    padding-left: 30%; /* Space for labels in mobile view */
+  }
+
+  /* Label-like design for headers on small screens */
+  .data-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    color: #4CAF50;
+    padding-left: 0; /* Remove space for labels */
+  }
+
+  /* Optional: Adding scrollable container for wide tables */
+  .data-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+  }
+}
+

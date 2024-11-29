@@ -1,0 +1,73 @@
+/* MainContent.css */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ffffff; /* Light gray background */
+    min-height: calc(100vh - 150px); /* Fills the viewport minus header/footer height */
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Modern and clean font */
+    color: #333; /* Dark text for contrast */
+}
+
+.Test{
+    height: 30px;
+    background-color: #005bb5;
+}
+
+.main-content h1 {
+    font-size: 2.5rem; /* Prominent heading */
+    margin-bottom: 1rem;
+    color: #0073e6; /* Blue for emphasis */
+}
+
+.main-content p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 2rem; /* Spacing between text and input */
+    line-height: 1.6;
+    color: #555; /* Softer color for secondary text */
+}
+
+.input-field {
+    width: 100%; /* Ensures responsive width */
+    max-width: 500px; /* Limits the input size */
+    margin: 0 auto; /* Centers the input field */
+    padding: 0;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    outline: none;
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.input-field input:focus {
+    border-color: #0073e6; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 115, 230, 0.5); /* Subtle shadow on focus */
+}
+
+.input-field input::placeholder {
+    color: #aaa; /* Softer color for placeholder text */
+}
+.but {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.but:hover {
+    background-color: #005bb5;
+}

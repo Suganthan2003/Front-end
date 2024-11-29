@@ -1,0 +1,62 @@
+/* Footer.css */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #ffffff; /* Dark background */
+    color: #000000; /* White text for contrast */
+    padding: 1.5rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 45%; /* Space for both sections */
+}
+
+.footer-logo {
+    width: 100px; /* Adjust logo size */
+    height: auto;
+    margin-bottom: 1rem; /* Space between logo and text */
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.footer-section p {
+    font-size: 1rem; /* Slightly smaller font */
+    line-height: 1.4;
+    margin: 0;
+    padding: 10px;
+}
+
+.footer-left {
+    align-items: flex-start;
+    text-align: left; /* Align text on the left side */
+}
+
+.footer-right {
+    align-items: flex-end;
+    text-align: right; /* Align text on the right side */
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center; /* Center align everything on smaller screens */
+    }
+
+    .footer-left,
+    .footer-right {
+        align-items: center;
+        text-align: center;
+    }
+}

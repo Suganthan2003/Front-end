@@ -1,0 +1,32 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(90deg, rgb(135 134 153) 0%, rgb(157 144 49) 35%, rgba(0, 212, 255, 1) 100%);
+    padding: 20px;
+  }
+  
+  .navbar-list {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-link {
+    display: none;
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+    margin: 0 10px;
+  }
+  
+  .navbar-link:hover {
+    background-color: #555;
+  }
+  
